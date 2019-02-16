@@ -1,0 +1,371 @@
+
+/*--------------------Basic-Porfolio Page Style--------------------*/
+.brd {
+    border: 1px dashed red;
+}
+
+body {
+margin: 0;
+}
+
+/*--------------------Header Style---*/
+
+header {
+background: #ffffff;
+font-family: Georgia, 'Times New Roman', Times, serif;
+background: #ffffff;
+}
+
+
+#top {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.aboutme {
+background: #4aaaa5;
+color: #ffffff;
+width: 300px;
+text-align: center;
+float: left;
+}
+
+.links ul {
+    float: right;
+    color: #777777;
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links li {
+list-style-type: none;
+display: inline;
+margin: 0 0 0 30px;
+font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #777777;
+}
+
+a:hover {
+    color: #4aaaa5;
+}
+
+/*--------------------End Header Style---*/
+
+
+/*--------------------Main Content Style---*/
+article {
+    clear: both;
+    border-top: solid 2px;
+    border-color: #cccccc;
+    background-image: url(../images/vintage-concrete.png);
+    background-repeat: repeat;
+    min-height: 85vh;
+    padding-bottom: 100px;
+}
+
+#main {
+    min-height: 450px;
+    width: 960px;
+    margin: 30px auto;
+    background:#ffffff;
+    border: solid 1px;
+    border-color: #dddddd;
+    min-height: 100%vh;
+    
+
+    
+    
+}
+
+.main-title {
+    border-bottom: solid 2px;
+    border-color: #dddddd;
+    margin: 0 50px 20px 50px;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+}
+/*--------------------End Main Content Style---*/
+
+/*--------------------Footer Style---*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    line-height: 90px;
+    background-color: #666666;
+    border-top: solid 8px;
+    border-color: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    
+ }
+ 
+ /*--------------------End Footer Style---*/
+
+
+ /*--------------------End Basic-Porfolio Style--------------------*/
+
+
+ /*--------------------"About" Syle---*/
+.profilepic {
+    float: left;
+}
+
+.imgpic {
+    width: 250px;
+    margin: 0 50px;
+}
+
+.main-text {
+margin: 0 50px 0 300px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 18px;
+color: #777777;
+
+}
+/*--------------------End "About" Style---*/
+
+
+/* -------------------------------------------------------------- */
+
+
+/*--------------------"Contact" Style---*/
+
+form {
+    margin: 0 20px 0 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+}
+
+.form-name, .form-email, .form-message {
+    padding-bottom: 20px;
+    
+}
+
+.form-name input {
+  width: 855px;
+  height: 20px;
+  color: #777777;
+  border: solid 1px #dddddd;
+  
+}
+
+.form-email input {
+    width: 855px;
+    height: 20px;
+    color: #777777;
+    border: solid 1px #dddddd;
+    
+}
+
+.form-message textarea {
+    width: 855px;
+    height: 200px;
+    color: #777777;
+    border: solid 1px #dddddd;
+    
+}
+
+.form-submit input {
+    background: #4aaaa5;
+    color: #ffffff;
+    width: 80px;
+    height: 40px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+/*--------------------End "Contact" Style---*/
+
+
+/* -------------------------------------------------------------- */
+
+
+/*--------------------"Portfolio" Style---*/
+
+div.left {
+    float: left;
+    margin: 0 5px 5px 50px;
+    width: 275px;
+    height: 200px;
+}
+
+div.right {
+    float: left;
+    margin: 0 5px 5px 25px;
+    width: 275px;
+    height: 200px;
+}
+
+.banner {
+    background: #4aaaa5;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    width: 250px;
+    bottom: 60px;
+    padding: 10px 0;
+}
+
+.push {
+    clear: both;
+
+}
+
+/*-------------- RESPONSIVE PAGE STYLE 980px, 768px, 640px----------- */
+
+/* No Changes needed?? media style 980px */
+@media screen and (max-width: 979px) {          
+    header {
+        width: 100%;
+    }
+
+    #top {
+        width: 100%;
+    }
+
+    .links {
+        width: 100%;
+    }
+
+article {
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+}
+
+.main-title {
+    max-width: 100%;
+}
+
+footer {
+    width: 100%;
+}
+
+/*-------------- START ABOUT media style max-width 980px, */
+.profilepic {
+    width: 25%;
+}
+
+.imgpic {
+    width: 100%;
+}
+
+.main-text {
+    max-width: 60%;
+}
+
+p {
+    font-size: 100%;
+}
+
+/*-------------- END ABOUT media style max-width 980px*/
+
+/*--------------- START CONTACT media style max-width 980px*/
+form {
+    max-width: 100%;
+}
+
+.contact-info {
+    max-width: 100%;
+}
+
+
+/*--------------- END CONTACT media style max-width 980px*/
+
+}
+
+
+
+/* media style 768px */
+@media screen and (max-width: 767px) {
+    header {
+        width: 100%;
+    }
+
+    #top {
+        width: 100%;
+    }
+
+    .links {
+        width: 100%;
+    }
+
+article {
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+}
+
+.main-title {
+    max-width: 100%;
+}
+
+footer {
+    width: 100%;
+}
+
+/*-------------- START ABOUT media style max-width 980px, */
+.profilepic {
+    width: 25%;
+}
+
+.imgpic {
+    width: 100%;
+}
+
+.main-text {
+    max-width: 60%;
+}
+
+p {
+    font-size: 100%;
+}
+
+/*-------------- END ABOUT media style max-width 980px*/
+
+/*--------------- START CONTACT media style max-width 980px*/
+form {
+    max-width: 100%;
+}
+
+.contact-info {
+    max-width: 100%;
+}
+
+
+/*--------------- END CONTACT media style max-width 980px*/
+
+}
+
+
+
+/* media style 640px */
+@media screen and (max-width: 639px) {
+
+
+}
+
+
+
+
+
+
