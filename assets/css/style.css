@@ -8,7 +8,7 @@ body {
 margin: 0;
 }
 
-/*--------------------Header Style---*/
+/*--------------------START Header Style---*/
 
 header {
 background: #ffffff;
@@ -55,10 +55,8 @@ a:hover {
     color: #4aaaa5;
 }
 
-/*--------------------End Header Style---*/
 
-
-/*--------------------Main Content Style---*/
+/*--------------------START Main Content Style---*/
 article {
     clear: both;
     border-top: solid 2px;
@@ -90,9 +88,8 @@ h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #4aaaa5;
 }
-/*--------------------End Main Content Style---*/
 
-/*--------------------Footer Style---*/
+/*--------------------START Footer Style---*/
 footer {
     position: fixed;
     bottom: 0;
@@ -107,13 +104,12 @@ footer {
     
  }
  
- /*--------------------End Footer Style---*/
 
 
  /*--------------------End Basic-Porfolio Style--------------------*/
 
 
- /*--------------------"About" Syle---*/
+ /*--------------------START "About" Syle---*/
 .profilepic {
     margin-left: 100px;
 }
@@ -134,13 +130,12 @@ footer {
     color: #777777;
     
 }
-/*--------------------End "About" Style---*/
 
 
 /* -------------------------------------------------------------- */
 
 
-/*--------------------"Contact" Style---*/
+/*--------------------START "Contact" Style---*/
 
 form {
     margin: 0 20px 0 50px;
@@ -188,13 +183,12 @@ form {
     font-size: 15px;
 }
 
-/*--------------------End "Contact" Style---*/
 
 
 /* -------------------------------------------------------------- */
 
 
-/*--------------------"Portfolio" Style---*/
+/*--------------------START "Portfolio" Style---*/
 
 
 
@@ -228,9 +222,9 @@ div.right {
 
 }
 
-/*-------------- RESPONSIVE PAGE STYLE 980px, 768px, 640px----------- */
+/*-------------- MEDIA QUERIES PAGE STYLE 980px, 768px, 640px----------- */
 
-/* media style 980px */
+/*---------- media style 980px */
 @media screen and (max-width: 980px) {          
     header {
         width: 100%;
@@ -242,7 +236,6 @@ div.right {
 
     .links {
         width: 95%;
-        
     }
 
     article {
@@ -279,7 +272,6 @@ div.right {
         font-size: 100%;
     }
 
-/*-------------- END ABOUT media style max-width 980px*/
 
 /*--------------- START CONTACT media style max-width 980px*/
     form {
@@ -290,14 +282,16 @@ div.right {
         max-width: 100%;
     }
 
-
-/*--------------- END CONTACT media style max-width 980px*/
-
 }
 
+/*--------------- START PORTFOLIO media style max-width 980px*/
+
+/* For some reason my images change betwen 980px and 973px.
+i can't seem to find why and i've looked at my histoy */
 
 
-/* media style 768px */
+
+/*----------  media style 768px */
 @media screen and (max-width: 768px) {
     header {
         width: 100%;
@@ -329,7 +323,7 @@ div.right {
         width: 100%;
     }
 
-/*-------------- START ABOUT media style max-width 768px */
+/*-------------- START "About" media style max-width 768px */
     .profilepic {
         max-width: 25%;
     }
@@ -347,9 +341,8 @@ div.right {
         font-size: 100%;
     }
 
-/*-------------- END ABOUT media style max-width 768px*/
 
-/*--------------- START CONTACT media style max-width 768px*/
+/*--------------- START "Contact" media style max-width 768px*/
     form {
         max-width: 100%;
     }
@@ -359,13 +352,12 @@ div.right {
     }
 
 
-/*--------------- END CONTACT media style max-width 768px*/
 
 }
 
 
 
-/* media style 640px */
+/*----------  media style 640px */
 @media screen and (max-width: 640px) {
     
     #top {
@@ -399,7 +391,7 @@ div.right {
     }
 
 
-/*-------------- START ABOUT media style max-width 640px */
+/*-------------- START "About" media style max-width 640px */
     .profilepic {
         max-width: 100%
     }
@@ -419,20 +411,15 @@ div.right {
     }
 
 
-
-/*-------------- END ABOUT media style max-width 640px*/
-/*-------------- START PORTFOLIO media style max-width 640px*/
+/*-------------- START "Portfolio" media style max-width 640px*/
     
-.gal-container {
-    max-width: 100%;
-    
-    
-}
-
-/*-------------- END PORTFOLIO media style max-width 640px*/
+    .right {
+        margin: 0 50px;
+    }
 
 
-/*--------------- START CONTACT media style max-width 640px*/
+
+/*---------------media style max-width 640px*/
     form {
         max-width: 100%;
         padding: 20px;
