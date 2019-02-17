@@ -78,9 +78,6 @@ article {
     border-color: #dddddd;
     min-height: 100%vh;
     
-
-    
-    
 }
 
 .main-title {
@@ -118,20 +115,24 @@ footer {
 
  /*--------------------"About" Syle---*/
 .profilepic {
-    float: left;
+    margin-left: 100px;
 }
 
 .imgpic {
-    width: 250px;
+    max-width: 30%;
+    min-width: 30%;
     margin: 0 50px;
+    float: left;
+    
 }
 
-.main-text {
-margin: 0 50px 0 300px;
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: 18px;
-color: #777777;
 
+.inner-content p {
+    margin-right: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #777777;
+    
 }
 /*--------------------End "About" Style---*/
 
@@ -195,6 +196,8 @@ form {
 
 /*--------------------"Portfolio" Style---*/
 
+
+
 div.left {
     float: left;
     margin: 0 5px 5px 50px;
@@ -239,6 +242,7 @@ div.right {
 
     .links {
         width: 95%;
+        
     }
 
     article {
@@ -300,7 +304,7 @@ div.right {
     }
 
     #top {
-        width: 100%;
+        max-width: 100%;
     }
 
     .links {
@@ -364,13 +368,17 @@ div.right {
 /* media style 640px */
 @media screen and (max-width: 640px) {
     
+    #top {
+        max-width: 100%;
+    }
+
     .aboutme {
         width: 100%;
     }
 
     .links {
-        max-width: 70%;
-
+        width: 70%;
+        
     }
 
     article {
@@ -382,7 +390,7 @@ div.right {
     }
 
     .main-title {
-        width: 100%;
+        max-width: 100%;
         
     }
 
@@ -397,10 +405,15 @@ div.right {
     }
 
     .imgpic {
-        width: 100%
+        max-width: 85%;
+        min-width: 30%;
+        margin: 0 50px;
     }
+    
 
-    .main-text {
+
+    .inner-content p {
+     margin: 0 50px;   
         
         
     }
@@ -410,12 +423,10 @@ div.right {
 /*-------------- END ABOUT media style max-width 640px*/
 /*-------------- START PORTFOLIO media style max-width 640px*/
     
-.left {
-    width: 100%;
-}
-
-.right {
-    width: 100%;
+.gal-container {
+    max-width: 100%;
+    
+    
 }
 
 /*-------------- END PORTFOLIO media style max-width 640px*/
@@ -431,6 +442,8 @@ div.right {
         max-width: 100%;
         padding: px;
     }
+
+    
 
 
 /*--------------- END CONTACT media style max-width 640px*/
